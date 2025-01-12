@@ -43,8 +43,6 @@ After adding another worker node and a fabflix pod (not on a fresh startup) it w
 - dockerized
 - kubernetes deployment
 - jmeterad
-
-#### Husam:
 - MySQL DB setup
 - hyperlinking star/movie single pages + jump to movie list
 - browse by genre
@@ -57,7 +55,7 @@ After adding another worker node and a fabflix pod (not on a fresh startup) it w
 - dockerized
 - kubernetes deployment
 - j meter
-- 
+
 
 - # Connection Pooling
     - #### Include the filename/path of all code/configuration files in GitHub of using JDBC Connection Pooling.
