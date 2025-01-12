@@ -1,0 +1,191 @@
+body {
+    background-color: #f0f4f1; /* Light background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark text color for contrast */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #8f9779; /* Soft heading color */
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #4d5d53; /* Light border color */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff; /* White form background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-form label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #4d5d53; /* Darker text for labels */
+    padding-top: 10px;
+}
+
+/* Separate containers for dropdowns */
+/*.dropdown-container {*/
+/*    margin-right: 10px;*/
+/*    padding: 5px;*/
+/*}*/
+
+/* Styling for both dropdowns */
+#num-results, #sort-option {
+    padding: 2px;
+    border: 1px solid #4d5d53; /* Light border color */
+    border-radius: 5px;
+    background-color: #ffffff; /* White select background */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s;
+}
+
+#num-results {
+    height: auto;
+    width: auto; /* Set equal width for both dropdowns */
+}
+
+#sort-option {
+    height: auto;
+    width: auto; /* Set equal width for both dropdowns */
+}
+
+
+#num-results:focus, #sort-option:focus {
+    border-color: #738678; /* Focused state */
+    outline: none;
+}
+
+#search-form button {
+    background-color: #4d5d53; /* Button background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-form button:hover {
+    background-color: #738678; /* Darker shade on hover */
+}
+
+/* Pagination Controls */
+#pagination-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pagination-controls button {
+    background-color: #4d5d53; /* Button background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagination-controls button:hover {
+    background-color: #738678; /* Darker button color on hover */
+}
+
+#pagination-controls button:disabled {
+    background-color: #ccc; /* Gray out disabled buttons */
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    #pagination-controls {
+        flex-direction: column;
+    }
+
+    #pagination-controls button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+#movie_table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff; /* White table background */
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+#movie_table thead {
+    background-color: #4d5d53; /* Header background color */
+    color: #ffffff; /* White text color for header */
+}
+
+#movie_table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+#movie_table tbody tr:nth-child(even) {
+    background-color: ghostwhite; /* White for even rows */
+}
+
+#movie_table tbody tr:hover, .quantity-header:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+#movie_table th, #movie_table td {
+    padding: 10px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #search-form {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.quantity-input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.quantity-header {
+    width: 100px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#toast-message {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s;
+}
+

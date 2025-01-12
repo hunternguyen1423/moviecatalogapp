@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <!-- Master Database Resource -->
+    <Resource name="jdbc/masterDB"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              maxActive="100"
+              maxIdle="30"
+              maxWaitMillis="10000"
+              type="javax.sql.DataSource"
+              username="test"
+              password="test"
+              url="jdbc:mysql://host.docker.internal:3306/moviedb?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;cachePrepStmts=true&amp;autoReconnect=true&amp;allowPublicKeyRetrieval=true" />
+
+    <!-- Slave Database Resource -->
+    <Resource name="jdbc/slaveDB"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              maxActive="100"
+              maxIdle="30"
+              maxWaitMillis="10000"
+              type="javax.sql.DataSource"
+              username="readonly_user"
+              password="readonly_password"
+              url="jdbc:mysql://172.31.25.106:3306/moviedb?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;cachePrepStmts=true&amp;autoReconnect=true&amp;allowPublicKeyRetrieval=true" />
+
+</Context>

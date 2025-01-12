@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="checkout.css"> <!-- Optional: Link to a CSS file for styling -->
+</head>
+<body>
+
+<div id="navbar"></div>
+<div class="container">
+    <h1 id="page-name">Shopping Cart</h1>
+    <table id="cart_table" class="table table-striped">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Remove</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody id="cart_table_body"></tbody>
+    </table>
+    <p>Total Price: $<span id="total-price">0.00</span></p>
+    <button onclick="proceedToPayment()">Proceed to Payment</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<script src="checkout.js"></script> <!-- Link to the JavaScript file -->
+<script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<movies>
+    <directorfilms>
+        <director>
+            <dirname>Husam</dirname>
+        </director>
+        <films>
+            <film>
+                <fid>1</fid>
+                <t>Movie Title 1</t>
+                <year>2020</year>
+                <cats>
+                    <cat>Action</cat>
+                    <cat>Susp</cat>
+                </cats>
+            </film>
+            <film>
+                <fid>2</fid>
+                <t>Movie Title 2</t>
+                <year>2021</year>
+                <cats>
+                    <cat>Drama</cat>
+                    <cat>Romance</cat>
+                </cats>
+            </film>
+        </films>
+    </directorfilms>
+
+    <directorfilms>
+        <director>
+            <dirname>Hunter</dirname>
+        </director>
+        <films>
+            <film>
+                <fid>3</fid>
+                <t>Movie Title 3</t>
+                <year>1996</year>
+                <cats>
+                    <cat>Romt</cat>
+                    <cat>Susp</cat>
+                </cats>
+            </film>
+            <film>
+                <fid>4</fid>
+                <t>Movie Title 4</t>
+                <year>2025</year>
+                <cats>
+                    <cat>Drama</cat>
+                    <cat>Romance</cat>
+                </cats>
+            </film>
+        </films>
+    </directorfilms>
+    <!-- More directorfilms entries -->
+</movies>

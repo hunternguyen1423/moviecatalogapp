@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Movies</title>
+</head>
+<body>
+
+<div id="navbar"></div>
+<div class="container">
+    <h1>Browse Movies</h1>
+    <form id="movieSearchForm" method="get">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" /> <br/><br/>
+
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" /> <br/><br/>
+
+        <label for="director">Director:</label>
+        <input type="text" name="director" id="director" /> <br/><br/>
+
+        <label for="star">Star:</label>
+        <input type="text" name="star" id="star" /> <br/><br/>
+
+        <input type="submit" value="Search" />
+    </form>
+    <!-- Browse by Genre -->
+    <h2>Browse by Genre</h2>
+    <div id="genre-list">
+        <!-- Hyperlinked genres will be dynamically inserted here -->
+    </div>
+
+    <!-- Browse by Title -->
+    <h2>Browse by Title</h2>
+    <div id="title-list">
+        <!-- Hyperlinked titles (A-Z, 0-9, and *) will be dynamically inserted here -->
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<script src="browse.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+</head>
+<body>
+<h1>Employee Dashboard</h1>
+
+<!-- Section to insert a new star -->
+<h2>Insert a New Star</h2>
+<form id="insertStarForm">
+    <label for="starName">Star Name: </label>
+    <input type="text" id="starName" required>
+    <label for="birthYear">Birth Year (Optional): </label>
+    <input type="text" id="birthYear">
+    <button type="submit">Add Star</button>
+</form>
+
+<!-- Section to add a new movie -->
+<h2>Add New Movie</h2>
+<form id="addMovieForm">
+    <label for="movieTitle">Movie Title: </label>
+    <input type="text" id="movieTitle" required>
+    <label for="releaseYear">Release Year: </label>
+    <input type="text" id="releaseYear" required>
+    <label for="directorNameForMovie">Director: </label>
+    <input type="text" id="directorNameForMovie" required>
+    <label for="starNameForMovie">Star Name: </label>
+    <input type="text" id="starNameForMovie" required>
+    <label for="genreName">Genre: </label>
+    <input type="text" id="genreName" required>
+    <button type="submit">Add Movie</button>
+</form>
+
+<!-- Section to show metadata -->
+<h2>Database Metadata</h2>
+<button id="showMetadataButton">Show Database Metadata</button>
+<pre id="metadata"></pre>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>

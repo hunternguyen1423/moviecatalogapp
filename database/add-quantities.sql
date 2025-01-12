@@ -1,0 +1,1 @@
+ALTER TABLE sales ADD COLUMN quantity INT DEFAULT 0;

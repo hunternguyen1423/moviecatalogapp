@@ -1,0 +1,85 @@
+<nav>
+    <ul>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a id="dynamic-movie-link" href="#">Movie Results</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+
+    <div id="search-container" class="search-bar">
+        <label for="autocomplete">Full Text Search</label>
+        <input type="text" id="autocomplete" class="autocomplete-searchbox form-control"
+               placeholder="Search Movies..." />
+        <button id="search-button">Search</button>
+    </div>
+
+</nav>
+
+<style>
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Search Bar Styles */
+    label {
+        margin-right: 10px;
+    }
+
+    .search-bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    #autocomplete {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 200px;
+    }
+
+    #search-button {
+        padding: 5px 10px;
+        margin-left: 5px;
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #search-button:hover {
+        background-color: #555;
+    }
+
+    .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+    .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+    .autocomplete-selected { background: #F0F0F0; }
+    .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+    .autocomplete-group { padding: 2px 5px; }
+    .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+</style>

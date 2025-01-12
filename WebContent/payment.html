@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="checkout.css"> <!-- Optional: Link to a CSS file for styling -->
+</head>
+<body>
+
+<div id="navbar"></div>
+<div class="container">
+    <h1 id="page-name">Payment Information</h1>
+
+    <div id="total-price" class="total-price">Total: $<span id="total-amount">0.00</span></div>
+
+    <div class="checkout-field">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" required>
+    </div>
+
+    <div class="checkout-field">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" required>
+    </div>
+
+    <div class="checkout-field">
+        <label for="card-number">Credit Card Number:</label>
+        <input type="text" id="card-number" required>
+    </div>
+
+    <div class="checkout-field">
+        <label for="exp-date">Expiration Date (YYYY-MM-DD):</label>
+        <input type="text" id="exp-date" maxlength="10" placeholder="YYYY-MM-DD" required>
+    </div>
+
+    <button id="place-order-btn" class="place-order-btn">Place Order</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<script src="payment.js"></script> <!-- Link to the JavaScript file -->
+<script src="navbar.js"></script>
+</body>
+</html>
